@@ -8,3 +8,13 @@ C:\Users\DMP3\source\repos\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.csproj.
 C:\Users\DMP3\source\repos\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.csproj.CoreCompileInputs.cache
 C:\Users\DMP3\source\repos\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.exe
 C:\Users\DMP3\source\repos\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.pdb
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.csprojAssemblyReference.cache
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.Form1.resources
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.Properties.Resources.resources
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.csproj.GenerateResource.cache
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.csproj.CoreCompileInputs.cache
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.exe
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\obj\Debug\ExerciseOne.pdb
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\bin\Debug\ExerciseOne.exe.config
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\bin\Debug\ExerciseOne.exe
+C:\University\iii\I3_Projects\ExerciseOne\ExerciseOne\bin\Debug\ExerciseOne.pdb
