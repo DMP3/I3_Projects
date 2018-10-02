@@ -102,16 +102,12 @@ namespace ExerciseOne
                     }
                 }
             }
-            for(int i = 0; i < listData.Count; i++)
+            for(int i = 0; i < listData.Count-1; i++)
             {
                 sortedDataList.Add(listData[i]);
             }
             return sortedDataList;
         }
 
-        private void txtBoxInput_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

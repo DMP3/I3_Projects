@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_scan = new System.Windows.Forms.Button();
             this.btn_sort = new System.Windows.Forms.Button();
             this.lv_raw = new System.Windows.Forms.ListView();
@@ -130,7 +129,6 @@
             this.txtBoxInput.Name = "txtBoxInput";
             this.txtBoxInput.Size = new System.Drawing.Size(494, 416);
             this.txtBoxInput.TabIndex = 11;
-            this.txtBoxInput.Text = resources.GetString("txtBoxInput.Text");
             // 
             // Form1
             // 
