@@ -34,12 +34,14 @@ namespace ExerciseFour
 
         private void btn_test2_Click(object sender, EventArgs e)
         {
-            fillTextBox(textBox1, removeSpecialCharacters(Consts.TEST2));
+            string text = removeInsignificantWords(removeSpecialCharacters(Consts.TEST2));
+            fillTextBox(textBox1, text);
         }
 
         private void btn_test3_Click(object sender, EventArgs e)
         {
-            fillTextBox(textBox1, removeSpecialCharacters(Consts.TEST3));
+            string text = removeInsignificantWords(removeSpecialCharacters(Consts.TEST2));
+            fillTextBox(textBox1, text);
         }
 
         /// <summary>
@@ -64,6 +66,11 @@ namespace ExerciseFour
             return outputString;
         }
 
+        /// <summary>
+        /// Removes all insignificant words from given string.
+        /// </summary>
+        /// <param name="str">Text you want to process.</param>
+        /// <returns>Processed text.</returns>
         private string removeInsignificantWords(string str)
         {
             str = removeWordFromText(str, "is");
@@ -72,17 +79,28 @@ namespace ExerciseFour
             str = removeWordFromText(str, "an");
             str = removeWordFromText(str, "as");
             str = removeWordFromText(str, "the");
+            str = removeWordFromText(str, "to");
 
             return str;
         }
+
+        /// <summary>
+        /// Remove given word from a string.
+        /// </summary>
+        /// <param name="test">Text that you want to process.</param>
+        /// <param name="str">word you want to remove from text</param>
+        /// <returns>Processed text</returns>
         private string removeWordFromText(string test, string str)
         {
-            string second_string = string.Empty;
-            if (test.Contains(str))
+            string text = test.ToLower();
+            string[] words = text.Split(' ');
+            string newTest="";
+            foreach (var word in words)
             {
-                second_string = test.Remove(test.IndexOf(" " + str), (" " + str).Length);
+                if (!(word.Equals(str) && word.Length == str.Length))
+                    newTest = newTest + word + " ";
             }
-            return second_string;
+            return newTest;
         }
         
     }
