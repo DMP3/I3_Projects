@@ -26,6 +26,7 @@ namespace ExerciseFour
 
         private void btn_test1_Click(object sender, EventArgs e)
         {
+            //fillTextBox(textBox1, Consts.TEST1);
             string text = removeInsignificantWords(removeSpecialCharacters(Consts.TEST1));
             fillTextBox(textBox1, text);
 
@@ -65,21 +66,24 @@ namespace ExerciseFour
 
         private string removeInsignificantWords(string str)
         {
-            var replacements = new[]{
-               new{Find="and",Replace=" "},
-               new{Find="or",Replace=" "},
-               new{Find="to",Replace=" "},
-               new{Find="the",Replace=" "},
-               new{Find="an",Replace=" "},
-               new{Find="a",Replace=" "},
-               new{Find="is",Replace=" "},
-            };
-            foreach (var set in replacements)
-            {
-                str = str.Replace(set.Find, set.Replace);
-            }
+            str = removeWordFromText(str, "is");
+            str = removeWordFromText(str, "of");
+            str = removeWordFromText(str, "in");
+            str = removeWordFromText(str, "an");
+            str = removeWordFromText(str, "as");
+            str = removeWordFromText(str, "the");
+
             return str;
         }
-
+        private string removeWordFromText(string test, string str)
+        {
+            string second_string = string.Empty;
+            if (test.Contains(str))
+            {
+                second_string = test.Remove(test.IndexOf(" " + str), (" " + str).Length);
+            }
+            return second_string;
+        }
+        
     }
 }
