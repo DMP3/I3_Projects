@@ -5,11 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ExerciseOne
+namespace ExerciseTwo
 {
     public partial class Form1 : Form
     {
@@ -22,54 +21,48 @@ namespace ExerciseOne
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lbl_scanTime.Text = Constants.TIME.ToString();
+            lbl_data.Text = Constants.TEXT;
         }
 
         private void btn_scan_Click(object sender, EventArgs e)
         {
-            string data = tb_data.Text;
-            data = Regex.Replace(data, @"\s+", " ");
-            lv_raw.Items.Clear();
-            List<int> convertedList = convert(data);
-            for(int i = 0; i< convertedList.Count; i++)
+            string data = lbl_data.Text;
+            
+            List<string> convertedList = convert(data);
+            for (int i = 0; i < convertedList.Count; i++)
             {
-                lv_raw.Items.Add(convertedList[i].ToString());
+                //lb_raw.Add(convertedList[i].ToString());
+                lb_raw.Items.Add(convertedList[i].ToString());
+                //tb_words.AppendText(convertedList[i].ToString());
+                //tb_words.Text += convertedList[i].ToString();
             }
         }
 
         private void btn_sort_Click(object sender, EventArgs e)
         {
-            string data = tb_data.Text;
-            data.TrimStart(' ');
-            data.TrimEnd(' ');
-            lv_sort.Items.Clear();
-            var watch = System.Diagnostics.Stopwatch.StartNew();
-            List<int> sortedList = sortList(convert(data));
-            watch.Stop();
-            var timeMs = watch.ElapsedMilliseconds;
-            for (int i = 0; i < sortedList.Count; i++)
-            {
-                lv_sort.Items.Add(sortedList[i].ToString());
-            }
-            time.Text = timeMs.ToString() + " ms.";
+
         }
 
-
-
-        private List<int> convert(string strDefault , string word)
+        private void btn_unique_Click(object sender, EventArgs e)
         {
-            var convertedList = new List<int>();
+
+        }
+
+        private List<string> convert(string strDefault)
+        {
+            var convertedList = new List<string>();
             for (int i = 0; i < strDefault.Length; i++)
             {
                 try
                 {
-                    if (strDefault.Substring(i, 1) != " ")
+                    if (strDefault.Substring(i, 1) != " ") 
                     {
+                       // if (strDefault.Substring(i, 1) != "-" || strDefault.Substring(i, 1) != "\\") break;
                         subString += strDefault.Substring(i, 1);
                     }
                     else
                     {
-                        convertedList.Add(Convert.ToInt32(subString));
+                        convertedList.Add(subString);
                         subString = "";
                     }
                 }
@@ -85,7 +78,7 @@ namespace ExerciseOne
                 }
             }
             return convertedList;
-        } 
+        }
 
         private List<int> sortList(List<int> listData)
         {
@@ -103,7 +96,7 @@ namespace ExerciseOne
                     }
                 }
             }
-            for(int i = 0; i < listData.Count; i++)
+            for (int i = 0; i < listData.Count; i++)
             {
                 sortedDataList.Add(listData[i]);
             }

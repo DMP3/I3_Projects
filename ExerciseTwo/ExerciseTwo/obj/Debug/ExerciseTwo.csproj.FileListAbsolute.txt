@@ -1,0 +1,10 @@
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\bin\Debug\ExerciseTwo.exe.config
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\bin\Debug\ExerciseTwo.exe
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\bin\Debug\ExerciseTwo.pdb
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\obj\Debug\ExerciseTwo.csprojAssemblyReference.cache
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\obj\Debug\ExerciseTwo.Form1.resources
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\obj\Debug\ExerciseTwo.Properties.Resources.resources
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\obj\Debug\ExerciseTwo.csproj.GenerateResource.cache
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\obj\Debug\ExerciseTwo.csproj.CoreCompileInputs.cache
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\obj\Debug\ExerciseTwo.exe
+C:\Users\DMP3\source\repos\ExerciseTwo\ExerciseTwo\obj\Debug\ExerciseTwo.pdb
