@@ -26,7 +26,6 @@ namespace ExerciseFour
 
         private void btn_test1_Click(object sender, EventArgs e)
         {
-            //fillTextBox(textBox1, Consts.TEST1);
             string text = removeInsignificantWords(removeSpecialCharacters(Consts.TEST1));
             fillTextBox(textBox1, text);
 
@@ -102,6 +101,5 @@ namespace ExerciseFour
             }
             return newTest;
         }
-        
     }
 }
