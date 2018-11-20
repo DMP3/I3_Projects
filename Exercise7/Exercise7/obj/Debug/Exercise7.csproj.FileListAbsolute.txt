@@ -1,0 +1,10 @@
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\bin\Debug\Exercise7.exe.config
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\bin\Debug\Exercise7.exe
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\bin\Debug\Exercise7.pdb
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\obj\Debug\Exercise7.csprojAssemblyReference.cache
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\obj\Debug\Exercise7.Form1.resources
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\obj\Debug\Exercise7.Properties.Resources.resources
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\obj\Debug\Exercise7.csproj.GenerateResource.cache
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\obj\Debug\Exercise7.csproj.CoreCompileInputs.cache
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\obj\Debug\Exercise7.exe
+C:\Users\DMP3\source\repos\Exercise7\Exercise7\obj\Debug\Exercise7.pdb
